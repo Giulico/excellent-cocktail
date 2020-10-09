@@ -67,7 +67,11 @@ const Thankyou = function () {
           </motion.div>
 
           <motion.div variants={animation.bottomTopVariants}>
-            <Button variant="outlined" onClick={restartClickHandler}>
+            <Button
+              variant="outlined"
+              color="primary"
+              onClick={restartClickHandler}
+            >
               Start a new order
             </Button>
           </motion.div>

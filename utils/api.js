@@ -46,7 +46,9 @@ export function mapCocktails(cocktail) {
  */
 export async function getCocktails() {
   // Fetch
-  const cocktailsFromApi = await fetchCocktailsByLetters(ALPHABET.slice(0, 3))
+  const cocktailsFromApi = await fetchCocktailsByLetters(
+    ALPHABET /*.slice(0, 3)*/
+  )
   // Clean up
   const cocktails = cocktailsFromApi.reduce((prev, curr) => {
     // Skip letters without any cocktails

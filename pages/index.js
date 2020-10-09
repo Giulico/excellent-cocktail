@@ -31,7 +31,7 @@ const Home = function () {
         initial="exit"
         animate="enter"
         exit="exit"
-        // variants={animation.parentTopVariants}
+        variants={animation.parentTopVariants}
       >
         <Box component="main" align="center" mt={4}>
           <motion.div variants={animation.topBottomVariants}>

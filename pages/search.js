@@ -129,17 +129,15 @@ const Search = function ({ cocktails = [], width }) {
     setState({ ...state, isDialogOpen: false })
   }, [state])
 
-  const getGridListCols = () => {
+  const getGridListCols = useMemo(() => {
     if (isWidthUp('md', width)) {
       return 3
     }
-
     if (isWidthUp('sm', width)) {
       return 2
     }
-
     return 1
-  }
+  }, [width])
 
   return (
     <motion.div initial="exit" animate="enter" exit="exit">
@@ -171,7 +169,7 @@ const Search = function ({ cocktails = [], width }) {
               exit="exit"
               variants={animation.drinksVariants}
             >
-              <GridList cols={getGridListCols()} cellHeight={280}>
+              <GridList cols={getGridListCols} cellHeight={280}>
                 {filteredCocktails.map((item) => (
                   <DrinkTile
                     key={item.name}

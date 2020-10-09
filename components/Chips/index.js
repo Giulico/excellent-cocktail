@@ -16,7 +16,7 @@ const Chips = function ({ items, onClick }) {
       <Chip
         className={style.chip}
         variant="outlined"
-        color="secondary"
+        color="primary"
         label={item}
         data-value={item}
         onClick={onClick}
