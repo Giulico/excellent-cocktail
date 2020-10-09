@@ -1,0 +1,11 @@
+.toolbar {
+  justify-content: flex-end;
+}
+
+.badge span:nth-child(2) {
+  right: -3px;
+  top: 13px;
+  border: 2px solid white;
+  padding: 0 4px;
+  background-color: #b53f3f;
+}

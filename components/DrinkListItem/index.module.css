@@ -1,0 +1,18 @@
+.root {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px;
+}
+
+.fab {
+  margin: 0 4px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.avatarlist {
+  width: 150px;
+}
+
+.text span {
+  font-weight: bold;
+}
