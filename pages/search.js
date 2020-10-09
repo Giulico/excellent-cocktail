@@ -34,6 +34,7 @@ import DrinkDialogContent from '../components/DrinkDialogContent'
 import GridList from '@material-ui/core/GridList'
 import Head from 'next/head'
 import Header from '../components/Header'
+import Link from 'next/link'
 import Snackbar from '@material-ui/core/Snackbar'
 import Typography from '@material-ui/core/Typography'
 
@@ -213,7 +214,10 @@ const Search = function ({ cocktails = [], width }) {
               variant="filled"
               severity="success"
             >
-              Good choice, thank you!
+              Good choice, thank you!{' '}
+              <strong>
+                <Link href="/overview">View order</Link>
+              </strong>
             </Alert>
           </Snackbar>
 
