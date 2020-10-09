@@ -6,16 +6,16 @@ import * as animation from '../animations/thankyou'
 
 // Components
 import { motion } from 'framer-motion'
-import Head from 'next/head'
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
-import Thumb from '../components/Thumb'
 import Button from '@material-ui/core/Button'
+import Container from '@material-ui/core/Container'
+import Head from 'next/head'
+import Thumb from '../components/Thumb'
+import Typography from '@material-ui/core/Typography'
 
 // Hooks
-import { useEffect } from 'react'
 import { useCallback } from 'react'
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { useStore } from 'redhooks'
 
@@ -58,7 +58,7 @@ const Thankyou = function () {
               Thank you
             </Typography>
             <Typography variant="h4" component="p" gutterBottom>
-              We're preparing your cocktail
+              We&apos;re preparing your cocktail
             </Typography>
           </motion.div>
 

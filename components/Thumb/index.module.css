@@ -1,10 +1,6 @@
 .root {
   margin: 32px auto;
-  max-width: 300px;
   width: 100%;
-}
-
-.root img {
-  max-width: 100%;
+  max-width: 300px;
   border-radius: 50%;
 }

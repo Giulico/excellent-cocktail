@@ -14,7 +14,7 @@ import Box from '@material-ui/core/Box'
 import { useCallback } from 'react'
 import { useRouter } from 'next/router'
 
-export default function Home() {
+const Home = function () {
   const router = useRouter()
 
   const continueClickHandler = useCallback(() => {
@@ -31,7 +31,7 @@ export default function Home() {
         initial="exit"
         animate="enter"
         exit="exit"
-        variants={animation.parentTopVariants}
+        // variants={animation.parentTopVariants}
       >
         <Box component="main" align="center" mt={4}>
           <motion.div variants={animation.topBottomVariants}>
@@ -106,3 +106,5 @@ export default function Home() {
     </Container>
   )
 }
+
+export default Home

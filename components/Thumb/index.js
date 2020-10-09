@@ -1,13 +1,20 @@
 import PropTypes from 'prop-types'
 
 // Style
-import style from './index.module.css'
+// import style from './index.module.css'
 
 const Thumb = function ({ image, alt }) {
   return (
-    <figure className={style.root}>
-      <img src={image} alt={alt} />
-    </figure>
+    <img
+      style={{
+        margin: '32px auto',
+        width: '100%',
+        maxWidth: '300px',
+        borderRadius: '50%',
+      }}
+      src={image}
+      alt={alt}
+    />
   )
 }
 
